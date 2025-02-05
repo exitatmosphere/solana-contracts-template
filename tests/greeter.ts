@@ -3,12 +3,7 @@ import { BankrunProvider, startAnchor } from "anchor-bankrun";
 import { ProgramTestContext } from "solana-bankrun";
 import idl from "../target/idl/greeter.json";
 import { Greeter } from "../target/types/greeter";
-import {
-  genWalletProviders,
-  getTokenAccountData,
-  processTx,
-  TestWalletLabel,
-} from "./utils";
+import { genWalletProviders, processTx, TestWalletLabel } from "./utils";
 import chai, { expect } from "chai";
 import chaiAsPromised from "chai-as-promised";
 
